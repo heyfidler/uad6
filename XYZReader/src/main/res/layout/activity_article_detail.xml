@@ -14,22 +14,27 @@
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="wrap_content"
             android:fitsSystemWindows="true"
             android:minHeight="0dp"
-            app:layout_scrollFlags="scroll|enterAlways">
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_card_top_margin"
+                app:layout_collapseMode="parallax"
+                android:scaleType="centerCrop"/>
             <ImageButton
                 android:id="@+id/action_up"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:background="?selectableItemBackgroundBorderless"
-                android:layout_gravity="bottom"
+                android:layout_margin="40dp"
+                android:layout_gravity="top"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerInside"
                 android:contentDescription="@string/up"
-                android:src="@drawable/ic_arrow_back"
-
-                app:layout_collapseMode="parallax" />
+                android:src="@drawable/ic_arrow_back" />
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 <!--android:background="?selectableItemBackgroundBorderless"-->
