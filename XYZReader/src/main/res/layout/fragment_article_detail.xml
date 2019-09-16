@@ -7,11 +7,10 @@
     android:nestedScrollingEnabled="true"
     android:layout_height="match_parent">
 
-    <com.example.xyzreader.ui.ObservableScrollView
+    <android.support.v4.widget.NestedScrollView
         android:id="@+id/scrollview"
-        android:layout_width="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:nestedScrollingEnabled="true"
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <FrameLayout
@@ -103,12 +102,12 @@
 
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
         </FrameLayout>
-    </com.example.xyzreader.ui.ObservableScrollView>
+    </android.support.v4.widget.NestedScrollView>
 
     <android.support.design.widget.FloatingActionButton
         app:fabSize="normal"
         app:elevation="6dp"
-        app:pressedTranslationZ="12dp"
+        app:pressedTranslationZ="6dp"
 
         android:layout_gravity="bottom|end"
         android:id="@+id/share_fab2"
